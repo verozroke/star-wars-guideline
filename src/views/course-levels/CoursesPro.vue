@@ -41,6 +41,7 @@
                 </transition>
             </div>
         </div>
+        <!-- something -->
         <FooterSection/>
     </div>
 </template>

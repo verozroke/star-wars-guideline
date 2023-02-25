@@ -5,7 +5,7 @@
                 <div class="courses__route-box">
                     <ul class="courses__route">
                             <li  v-for="lecture in newbieStore.lectures" :key="lecture.id" class="courses__item item">
-                                <div class="item__title">{{ lecture.title }}</div>
+                                <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
                                     <div class="item__outer-circle-video">
                                         <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
@@ -55,7 +55,7 @@ const newbieStore = useNewbieStore()
 
 const post = {
     title: ref(''),
-    desc: ref('Здесь находятся все нужные тебе лекции и тесты!'),
+    desc: ref('Мы рады приветствовать тебя в рядах Торговой Команды! \n\nТебя ждет познавательный обучающий путь, где ты приобретешь ценные знания и опыт в продажах. \n\nНиже описание ступеней, которые помогут тебе стать эффективным сотрудником'),
     btnColor: ref(''),
     hasVideo: ref(false),
     link: ref(''),
@@ -271,15 +271,15 @@ function getInfo(infoParam) {
 }
 
 .green {
-    background-color: #007f48;
+    background-color: #014743;
     &:hover {
-        background-color: #00532f;
+        background-color: #02311d;
     }
 }
 .red {
-    background-color: #ff4b4b;
+    background-color: #ff0000;
     &:hover {
-        background-color: #e31c1c;
+        background-color: #dc0a0a;
     }
 }
 .orange {

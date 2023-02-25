@@ -5,7 +5,7 @@
                 <div class="courses__route-box">
                     <ul class="courses__route">
                             <li  v-for="lecture in proStore.lectures" :key="lecture.id" class="courses__item item">
-                                <div class="item__title">{{ lecture.title }}</div>
+                                <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
                                     <div class="item__outer-circle-video">
                                         <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
@@ -56,7 +56,7 @@ const proStore = useProStore()
 
 const post = {
     title: ref(''),
-    desc: ref('Здесь находятся все нужные тебе лекции и тесты!'),
+    desc: ref('Ты продвинутый сотрудник, который в работе использует различные техники Продаж, изученные на уровне 2.0. \n\n Для того чтобы стать еще более эффективным в работе пройди категорийные тренинги, повтори SBD рекомендации и выполни задания в онлайн тренажере "Конструктор по Шелвингу" совместно с Супервайзером или Территориальным менеджером'),
     btnColor: ref(''),
     hasVideo: ref(false),
     link: ref(''),
@@ -272,15 +272,15 @@ function getInfo(infoParam) {
 }
 
 .green {
-    background-color: #007f48;
+    background-color: #014743;
     &:hover {
-        background-color: #00532f;
+        background-color: #02311d;
     }
 }
 .red {
-    background-color: #ff4b4b;
+    background-color: #ff0000;
     &:hover {
-        background-color: #e31c1c;
+        background-color: #dc0a0a;
     }
 }
 .orange {
@@ -317,7 +317,7 @@ function getInfo(infoParam) {
 
 // sdfsdfsdf
 
-#endline-3 {
+#endline-2 {
     opacity: 0;
 }
 

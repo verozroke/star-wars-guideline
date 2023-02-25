@@ -13,27 +13,27 @@ export const useNewbieStore = defineStore('newbieStore',{
         lectures: [
                 {
                     id: 1,
-                    btnColor: 'purple',
+                    btnColor: 'green',
                     title: 'ЗНАКОМСТВО С КОМПАНИЕЙ',
                     hasVideo: false,
                     description: `После прохождения тобой первой недели адаптации c Супервайзером, закрепи материалы ниже: 
                     \n 1. Welcome видео о Компании ACC 
                     \n 2. История компании P&G 
-                    \n 3. Основные понятия вработе`,
+                    \n 3. Основные понятия в работе`,
                     link: 'https://www.duolingo.com/learn',
                     test: {
                         id: 1,
-                        btnColor: 'green',
+                        btnColor: 'red',
                         title: 'ЗНАКОМСТВО С КОМПАНИЕЙ',
                         link: '#'
                     }
                 },
                 {
                     id: 2,
-                    btnColor: 'orange',
+                    btnColor: 'green',
                     title: 'ТОРГОВЫЕ УСЛОВИЯ',
                     hasVideo: false,
-                    description: `Изучи документы совместно  Супервайзером: 
+                    description: `Изучи документы совместно с Супервайзером: 
                     \n 1. Квалификация ТТ
                     \n 2. Торговые Условия
                     \n 3. Программа «Золотой Продавец»
@@ -48,7 +48,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                 },
                 {
                     id: 3,
-                    btnColor: 'pink',
+                    btnColor: 'green',
                     title: 'ОСНОВЫ ДПШМ',
                     hasVideo: true,
                     description: `
@@ -58,25 +58,24 @@ export const useNewbieStore = defineStore('newbieStore',{
                     link: '#',
                     test: {
                         id: 3,
-                        btnColor: 'blue',
+                        btnColor: 'red',
                         title: 'ОСНОВЫ ДПШМ',
                         link: '#'
                     }
                 },
                 {
                     id: 4,
-                    btnColor: 'red',
-                    title: 'КОНЦЕПТУАЛЬНАЯ ПРОДАЖА',
+                    btnColor: 'green',
+                    title: '7 ШАГОВ ВИЗИТА',
                     hasVideo: true,
                     description: `
-                    1. Посмотри видео презентацию "Концептуальная продажа"
-                    \n 2. Изучи 10 задач в Магазине. Закрепи свои знания в полях
-                    `,
+                    1. Посмотри видео презентацию "7 Шагов Визита"
+                    \n 2. Закрепи свои знания в полях с Супервайзером`,
                     link: '#',
                     test: {
                         id: 4,
-                        btnColor: 'purple',
-                        title: 'КОНЦЕПТУАЛЬНАЯ ПРОДАЖА',
+                        btnColor: 'red',
+                        title: '7 ШАГОВ ВИЗИТА',
                         link: '#',
                     }
                 },

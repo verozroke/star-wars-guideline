@@ -5,7 +5,7 @@
                 <div class="courses__route-box">
                     <ul class="courses__route">
                             <li  v-for="lecture in experiencedStore.lectures" :key="lecture.id" class="courses__item item">
-                                <div class="item__title">{{ lecture.title }}</div>
+                                <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
                                     <div class="item__outer-circle-video">
                                         <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
@@ -56,7 +56,7 @@ const experiencedStore = useExperiencedStore()
 
 const post = {
     title: ref(''),
-    desc: ref('Здесь находятся все нужные тебе лекции и тесты!'),
+    desc: ref('Ты опытный сотрудник, который в работе использует, изученные знания для достижения результатов. \n\nПройдя путь по карте уровня 2.0. ты можешь изучить и/или подтвердить свои знания в базовых тренингах по продажам.'),
     btnColor: ref(''),
     hasVideo: ref(false),
     link: ref(''),
@@ -272,15 +272,15 @@ function getInfo(infoParam) {
 }
 
 .green {
-    background-color: #007f48;
+    background-color: #014743;
     &:hover {
-        background-color: #00532f;
+        background-color: #02311d;
     }
 }
 .red {
-    background-color: #ff4b4b;
+    background-color: #ff0000;
     &:hover {
-        background-color: #e31c1c;
+        background-color: #dc0a0a;
     }
 }
 .orange {
@@ -315,7 +315,7 @@ function getInfo(infoParam) {
     margin: 0 0 0 5px;
 }
 
-#endline-3 {
+#endline-4 {
     opacity: 0;
 }
 

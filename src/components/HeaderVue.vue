@@ -18,6 +18,9 @@
 
 <style lang="scss" scoped>
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
     background-color: #010101;
     backdrop-filter: brightness(50%);
     &::after {

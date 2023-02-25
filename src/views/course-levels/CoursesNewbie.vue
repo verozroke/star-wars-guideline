@@ -127,7 +127,7 @@ function getInfo(infoParam) {
 
 .card {
     position: sticky;
-    top: 3em;
+    top: 7em;
     margin: 3em 0 0 0;
     border: 2px solid #e5e5e5;
     background-color: #fff;

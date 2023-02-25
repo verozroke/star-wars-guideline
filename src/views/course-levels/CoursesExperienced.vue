@@ -32,7 +32,7 @@
                     <div :key="switcher" class="courses__card-box">
                         <div style="display: none;">{{ switcher }}</div>
                         <div class="courses__card card">
-                            <div class="card__title">{{ title ? title : 'Добро пожаловать!' }}</div>
+                            <div class="card__title">{{  (title === 'Основы дпшм' ? title = 'Основы ДПШМ' : title) ? title : 'Добро пожаловать!' }}</div>
                             <div style="white-space: pre-line;" class="card__text">
                                 {{ desc ? desc : 'Время проходить тесты!' }}
                             </div>

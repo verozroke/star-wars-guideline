@@ -1,13 +1,16 @@
 <template>
     <div class="hero">
         <div class="hero__container">
-            <div class="hero__logo"><img src="../img/hero/hero_logo.png" alt=""></div>
+            <div class="hero__logo"><img src="../img/hero/hero_log.png" alt=""></div>
             <div class="hero__box">
-                <div class="hero__title">Приветствуем!</div>
-                <div class="hero__subtitle">Добро пожаловать в путь Джедая</div>
-                <div class="hero__text">Мы рады приветствовать тебя в рядах Торговой Команды! Тебя ждет познавательный обучающий путь,
-                                        где ты приобретешь ценные знания и опыт в продажах. <br><br>Ниже уровни, которые помогут тебе
-                                        стать эффективным сотрудником</div>
+                <div class="hero__title">Добро пожаловать на обучающую платформу «Путь Джедая»</div>
+                <div class="hero__subtitle">Для Торговой Команды Традиционной Розницы Управления Продаж APPLECITY corps! </div>
+                <div class="hero__text">«Перейди на светлую сторону» и пройди обучение по всем уровням! <br><br>
+                                        <b style="color: red">1 уровень</b> «Юный Падаван» – для вновь принятых сотрудников<br>
+                                        <b style="color: red">2 уровень</b> «Джедай Продаж» - для опытных сотрудник<br>
+                                        <b style="color: red">3 уровень</b> «Мастер Продаж» - для продвинутых сотрудников<br><br>
+                                        Получи значок с присужденным рангом после прохождения аттестации по каждому уровню!   
+</div>
                 <div href="#downloadsection" @click.prevent="scrollDown('downloadsection')" class="hero__button button">Перейти на светлую сторону</div>
 
             </div>
@@ -29,7 +32,7 @@ function scrollDown(blockID) {
 .hero {
     background-color: #010101;
     &__container {
-        background-image: url('../img/hero/hero_background.png');
+        background-image: url('../img/hero/bg.jpg');
         min-height: 41.2em;
         display: flex;
         font-family: 'Noto Sans', sans-serif;
@@ -38,11 +41,12 @@ function scrollDown(blockID) {
         width: 550px;
         min-height: 41.2em;
         display: flex;
+        padding: 0 10em 0 0;
         align-items: center;
         & img {
             width: 550px;
             height: 550px;
-            
+            object-fit: contain;
         }
     }
     &__box {
@@ -58,20 +62,26 @@ function scrollDown(blockID) {
         letter-spacing: .5em;
     }
     &__title {
-        font-size: 65px;
-        margin: 0 0 .2em 0;
+        font-size: 35px;
+        margin: 0 0 .5em 0;
         font-weight: 700;
+        letter-spacing: .5px;
     }
     &__subtitle {
+        letter-spacing: .5px;
         color: red;
-        font-size: 23px;
-        margin: 0 0 1em 0;
+        width: 500px;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0 0 2em 0;
         font-family: 'Noto Sans', sans-serif;
     }
     &__text {
         letter-spacing: .2em;
         width: 450px;
-        font-size: 20px;
+        font-size: 15.5px;
+        letter-spacing: 1.5px;
         margin: 0 0 50px 0;
         line-height: 1.30em;
         font-family: 'Noto Sans', sans-serif;
@@ -79,15 +89,15 @@ function scrollDown(blockID) {
     &__button {
         background-color: #010101;
         border-radius: 3em;
-        padding: 0.5em 2em 0.5em 2em;
+        padding: 0.35em 3em 0.5em 3em;
         font-size: 20px;
         font-weight: 700;
         transition: .4s;
-        max-width: 20em;
+        max-width: 23em;
         font-family: 'Noto Sans', sans-serif;
         letter-spacing: normal;
-        color: rgb(255, 0, 0, 0.5);
-        border: 2px solid rgb(255, 0, 0, 0.5);
+        color: rgb(255, 0, 0, 0.7);
+        border: 2px solid rgb(255, 0, 0, 0.7);
         &:hover {
             transition: .4s;
             color: #010101;

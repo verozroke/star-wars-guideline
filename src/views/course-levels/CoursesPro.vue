@@ -7,14 +7,14 @@
                             <li  v-for="lecture in proStore.lectures" :key="lecture.id" class="courses__item item">
                                 <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
-                                    <div class="item__outer-circle-video">
+                                    <div class="item__outer-circle-video" :id="'testy' + lecture.test.id">
                                         <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
                                             <img class="play-icon" src="../../img/route/icons/play-icon.png" alt="">
                                         </div>
                                     </div>            
-                                    <div class="item__line"></div>
-                                    <div class="item__outer-circle-video">
-                                        <div class="item__inner-circle-video" :class="[lecture.test.btnColor]" @click="getInfo(lecture.test)">
+                                    <div class="item__line" :id="'test' + lecture.test.id"></div>
+                                    <div class="item__outer-circle-video" :id="'test' + lecture.test.id">
+                                        <div class="item__inner-circle-video hidden" :class="[lecture.test.btnColor]" @click="getInfo(lecture.test)">
                                             <img class="test-icon" src="../../img/route/icons/testi-icon.png" alt="">
                                         </div>
                                     </div>
@@ -247,6 +247,7 @@ function getInfo(infoParam) {
         justify-content: center;
         align-items: center;
         transition: .4s;
+
         &:hover {
             background-color:#5d2ab5;
             transition: .4s;
@@ -321,6 +322,14 @@ function getInfo(infoParam) {
     opacity: 0;
 }
 
+
+#test2 {
+    display: none;
+}
+
+#testy2 {
+    margin: 4em;
+}
 
 
 </style>

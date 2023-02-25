@@ -1,0 +1,1 @@
+import{C as o}from"./CoursesChoose-aa96be4d.js";import{F as s}from"./FooterSection-a9b25a61.js";import{_,o as a,c as t,e}from"./index-39d03246.js";const r={__name:"CoursesPage",setup(c){return(n,p)=>(a(),t("div",null,[e(o),e(s)]))}},f=_(r,[["__scopeId","data-v-62a4fd86"]]);export{f as default};

@@ -1,7 +1,7 @@
 <template>
     <div class="hero">
         <div class="hero__container">
-            <div class="hero__logo"><img src="../img/hero/hero_log.png" alt=""></div>
+            <div class="hero__logo"><img src="../img/hero/hero_log.png" alt=""><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B">Что такое "Звездные Войны»? Ознакомиться здесь!</a></div>
             <div class="hero__box">
                 <div class="hero__title">Добро пожаловать на обучающую платформу «Путь Джедая»</div>
                 <div class="hero__subtitle">Для Торговой Команды Традиционной Розницы Управления Продаж APPLECITY corps! </div>
@@ -38,15 +38,31 @@ function scrollDown(blockID) {
         font-family: 'Noto Sans', sans-serif;
     }
     &__logo {
+        flex-direction: column;
         width: 550px;
         min-height: 41.2em;
         display: flex;
         padding: 0 10em 0 0;
+        justify-content: center;
         align-items: center;
+        color: red;
+        font-family: 'Old Standard TT', serif;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 700;
+        & a {
+            color: red;
+            &:visited {
+                color: red;
+            }
+        }
         & img {
             width: 550px;
             height: 550px;
             object-fit: contain;
+            margin: 0 0 2em 0;
         }
     }
     &__box {
@@ -54,7 +70,7 @@ function scrollDown(blockID) {
         color: #fff;
         min-height: 41.2em;
         text-align: end;
-        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Old Standard TT', serif;
         width: 780px;
         display: flex;
         flex-direction: column;

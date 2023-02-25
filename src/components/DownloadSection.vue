@@ -3,9 +3,9 @@
     <div class="download" id="downloadsection">
         <div class="download__container">
             <div class="download__title">Навигационная карта</div>
-            <div class="download__subtitle">Мы подготовили тебя навигационную карту для вашего обучения!</div>
+            <div class="download__subtitle">Мы подготовили для тебя навигационную карту. В данной карте отображены все уровни. Здесь ты можешь ознакомиться со всей обучающей программой в рамках «Путь Джедая»</div>
             <div class="download__image"><img src="../img/download/card.png" alt=""></div>
-            <a href="https://psv4.userapi.com/c236331/u239206365/docs/d22/bfa353549f23/Obuchayuschaya_karta_kopia_2.pdf?extra=uBRvlkXEaHyTKhE8eM3PfP-SLUr6XrNYZGiHIX5p8Rx4BdPYwz1oR85dX2WqA9FZhh0sHfYfRy0NY3JWjVrKkfrmDc6570m_dHf5LTEwb20uKxBOKqsSPxz9Z9PFZdf6dw2goYhg9cI8TzA0xRxpbpZjcA" target="_blank" class="download__button">Скачать PDF</a>
+            <a href="https://drive.google.com/file/d/1I7SPADzhsqI_h99YTiPfAqoYHadyxvLk/view?usp=sharing" target="_blank" class="download__button">Скачать PDF</a>
         </div>
     </div>
 </template>
@@ -35,6 +35,7 @@
         }
     }
     &__title {
+        margin: 1.5em 0 0 0;
         font-size: 50px;
         font-weight: 700;
     }
@@ -44,11 +45,11 @@
         letter-spacing: 1px;
         font-style: italic;
         font-weight: 700;
-        width: 480px;
+        width: 700px;
         text-align: center;
     }
     &__button {
-        margin: 1em 0 0 0;
+        margin: 1em 0 2em 0;
         background-color: red;
         border-radius: 3em;
         padding: .7em 2em .7em 2em;

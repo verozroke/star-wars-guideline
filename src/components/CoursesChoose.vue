@@ -6,10 +6,10 @@
                 <li class="courses-page__item">
                     <div class="courses-page__number">Уровень I</div>
                     <router-link :to="{name: 'CoursesNewbie'}" class="courses-page__post post">
-                        <div class="post__image"><img src="../img/courses-choose/1.jpg" alt=""></div>
+                        <div class="post__image"><img src="../img/courses-choose/1.png" alt=""></div>
                         <div class="post__text">Юный падаван</div>
                     </router-link>
-                    <div class="courses-page__subtitle">Данный уровень для новых сотрудников торговой команды</div>
+                    <div class="courses-page__subtitle">Данный уровень для новеньких сотрудников торговой команды (менее 6 мес. в Компании)</div>
                 </li>
                 <li class="courses-page__item">
                     <div class="courses-page__number">Уровень II</div>
@@ -17,13 +17,13 @@
                         <div class="post__image"><img src="../img/courses-choose/2.jpg" alt=""></div>
                         <div class="post__text">Джедай Продаж</div>
                     </router-link>
-                    <div class="courses-page__subtitle">Данный уровень для сотрудников торговой команды с опытом</div>
+                    <div class="courses-page__subtitle">Данный уровень для опытных сотрудников торговой команды (более 6 мес. в Компании)</div>
                 </li>
                 <li class="courses-page__item">
                     <div class="courses-page__number">Уровень III</div>
                     <router-link :to="{name: 'CoursesPro'}" class="courses-page__post post">
-                        <div class="post__image"><img src="../img/courses-choose/3.jpg" alt=""></div>
-                        <div class="post__text">Йода в Продажах</div>
+                        <div class="post__image"><img src="../img/courses-choose/3.png" alt=""></div>
+                        <div class="post__text">Мастер Продаж</div>
                     </router-link>
                     <div class="courses-page__subtitle">Данный уровень для продвинутых сотрудников торговой команды</div>
                 </li>
@@ -46,10 +46,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 6em;
+        gap: 4em;
     }
     &__title {
+        margin: 1em 0 0 0;
         font-size: 50px;
         font-weight: 700;
     }
@@ -66,7 +66,7 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        justify-content: center;
+        justify-content: space-between;
         gap: 1em;
     }
     &__number {

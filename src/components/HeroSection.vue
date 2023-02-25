@@ -70,7 +70,8 @@ function scrollDown(blockID) {
         color: #fff;
         min-height: 41.2em;
         text-align: end;
-        font-family: 'Old Standard TT', serif;
+        font-family: 'Noto Sans', sans-serif;
+
         width: 780px;
         display: flex;
         flex-direction: column;
@@ -81,6 +82,8 @@ function scrollDown(blockID) {
         font-size: 35px;
         margin: 0 0 .5em 0;
         font-weight: 700;
+        font-family: 'Noto Sans', sans-serif;
+
         letter-spacing: .5px;
     }
     &__subtitle {

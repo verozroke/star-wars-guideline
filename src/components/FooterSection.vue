@@ -9,9 +9,9 @@
                 </div>
                 <div class="footer__media">
                     <ul class="footer__list">
-                        <li class="footer__el"><a href="#"><img src="../img/footer/icons/twitter.png" alt=""></a></li>
-                        <li class="footer__el"><a href="#"><img src="../img/footer/icons/insta.png" alt=""></a></li>
-                        <li class="footer__el"><a href="#"><img src="../img/footer/icons/facebook.png" alt=""></a></li>
+                        <li class="footer__el"><a target="_blank" href="https://twitter.com/applecityllc"><img src="../img/footer/icons/twitter.png" alt=""></a></li>
+                        <li class="footer__el"><a target="_blank" href="https://www.instagram.com/applecity_careers"><img src="../img/footer/icons/insta.png" alt=""></a></li>
+                        <li class="footer__el"><a target="_blank" href="https://www.facebook.com/APPLECityLLC/?locale=ru_RU"><img src="../img/footer/icons/facebook.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -61,6 +61,8 @@
         }
     }
     &__el {
+        height: 25px;
+        width: 25px;
         &>a>img {
             height: 25px;
             width: 25px;

@@ -50,6 +50,11 @@
 import { ref } from 'vue';
 import { useExperiencedStore } from '../../stores/ExperiencedStore'
 import FooterSection from '../../components/FooterSection.vue';
+import { onMounted } from 'vue';
+
+onMounted(() =>{
+  window.scrollTo(0, 0)
+})
 
 const experiencedStore = useExperiencedStore()
 

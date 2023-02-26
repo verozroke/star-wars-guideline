@@ -8,6 +8,11 @@
 <script setup>
 import CoursesChoose from '../components/CoursesChoose.vue';
 import FooterSection from '../components/FooterSection.vue';
+import { onMounted } from 'vue';
+
+onMounted(() =>{
+  window.scrollTo(0, 0)
+})
 </script>
 
 <style lang="scss" scoped>

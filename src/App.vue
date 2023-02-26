@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted } from 'vue';
 import HeaderVue from './components/HeaderVue.vue';
 
 </script>
@@ -6,7 +7,7 @@ import HeaderVue from './components/HeaderVue.vue';
 <template>
 	<div class="wrapper">
 		<header-vue/>
-		<router-view v-slot="{ Component }">
+		<router-view  v-slot="{ Component }">
 			<transition name="routering" mode="out-in">
 				<component :is="Component"></component>
 			</transition>

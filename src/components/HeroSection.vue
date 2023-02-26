@@ -1,14 +1,14 @@
 <template>
     <div class="hero">
         <div class="hero__container">
-            <div class="hero__logo"><img src="../img/hero/hero_log.png" alt=""><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B">Что такое "Звездные Войны»? Ознакомиться здесь!</a></div>
+            <div class="hero__logo"><img src="../img/hero/hero_log.png" alt=""><a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B">Что такое "Звездные Войны"? Ознакомиться здесь!</a></div>
             <div class="hero__box">
                 <div class="hero__title">Добро пожаловать на обучающую платформу «Путь Джедая»</div>
                 <div class="hero__subtitle">Для Торговой Команды Традиционной Розницы Управления Продаж APPLECITY corps! </div>
                 <div class="hero__text">«Перейди на светлую сторону» и пройди обучение по всем уровням! <br><br>
-                                        <b style="color: red">1 уровень</b> «Юный Падаван» – для вновь принятых сотрудников<br>
-                                        <b style="color: red">2 уровень</b> «Джедай Продаж» - для опытных сотрудник<br>
-                                        <b style="color: red">3 уровень</b> «Мастер Продаж» - для продвинутых сотрудников<br><br>
+                                        <b style="color: red">I уровень</b> «Юный Падаван» – для вновь принятых сотрудников<br>
+                                        <b style="color: red">II уровень</b> «Джедай Продаж» - для опытных сотрудник<br>
+                                        <b style="color: red">III уровень</b> «Мастер Продаж» - для продвинутых сотрудников<br><br>
                                         Получи значок с присужденным рангом после прохождения аттестации по каждому уровню!   
 </div>
                 <div href="#downloadsection" @click.prevent="scrollDown('downloadsection')" class="hero__button button">Перейти на светлую сторону</div>

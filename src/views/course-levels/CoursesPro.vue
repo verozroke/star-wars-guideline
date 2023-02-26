@@ -35,7 +35,7 @@
                             <div style="white-space: pre-line;" class="card__text">
                                 {{ desc ? desc : 'Время проходить тесты!' }}
                             </div>
-                            <a v-if="btnColor" :href="link" class="card__button" :class="[btnColor]">{{ desc ? (hasVideo ?  'Посмотреть видео' : 'Скачать документы') : 'Перейти в тест' }}</a>
+                            <a v-if="btnColor" :href="link" class="card__button" :class="[btnColor]">{{ desc ? (hasVideo ?  (title === 'Конструктор по шелвингу' ? 'Перейти по ссылке' : 'Посмотреть видео') : 'Скачать документы') : 'Перейти в тест' }}</a>
                         </div> 
                     </div>
                 </transition>
@@ -50,6 +50,11 @@
 import { ref } from 'vue';
 import { useProStore } from '../../stores/ProStore'
 import FooterSection from '../../components/FooterSection.vue';
+import { onMounted } from 'vue';
+
+onMounted(() =>{
+  window.scrollTo(0, 0)
+})
 
 const proStore = useProStore()
 

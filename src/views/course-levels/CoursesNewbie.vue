@@ -49,6 +49,11 @@
 import { ref } from 'vue';
 import { useNewbieStore } from '../../stores/NewbieStore'
 import FooterSection from '../../components/FooterSection.vue';
+import { onMounted } from 'vue';
+
+onMounted(() =>{
+  window.scrollTo(0, 0)
+})
 
 const newbieStore = useNewbieStore()
 

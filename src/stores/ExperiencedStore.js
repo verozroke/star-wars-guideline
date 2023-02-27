@@ -52,7 +52,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег
                 `,
                 hasVideo: true,
-                link: '#',
+                link: 'https://youtu.be/EDnCBisxNPU',
                 test: {
                     id: 3,
                     btnColor: 'red',

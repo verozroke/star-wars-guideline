@@ -8,13 +8,13 @@
                                 <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
                                     <div class="item__outer-circle-video"  :class="{'hidden': lecture.title === 'АТТЕСТАЦИЯ'}">
-                                        <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
+                                        <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="isSmallScreen(lecture)">
                                             <img class="play-icon" src="../../img/route/icons/play-icon.png" alt="">
                                         </div>
                                     </div>            
                                     <div class="item__line"  :class="{'hidden': lecture.title === 'АТТЕСТАЦИЯ'}"></div>
                                     <div class="item__outer-circle-video">
-                                        <div class="item__inner-circle-video" :class="[lecture.test.btnColor]" @click="getInfo(lecture.test)">
+                                        <div class="item__inner-circle-video" :class="[lecture.test.btnColor]" @click="isSmallScreen(lecture.test)">
                                             <img class="test-icon" src="../../img/route/icons/testi-icon.png" alt="">
                                         </div>
                                     </div>
@@ -39,6 +39,9 @@
                         </div> 
                     </div>
                 </transition>
+                <div class="blocker">
+                    contents
+                </div>
             </div>
         </div>
     </div>
@@ -74,13 +77,26 @@ function capitalize(word) {
 }
 
 
+function isSmallScreen(infoParam) {
+    if(window.screen.width > 1000) {
+        getInfo(infoParam)
+    } else {
+        openWindow(infoParam)
+    }
+}
+
+
 function getInfo(infoParam) {
     title.value = capitalize(infoParam.title)
     desc.value  = infoParam.description
     btnColor.value = infoParam.btnColor
     hasVideo.value = infoParam.hasVideo
     link.value = infoParam.link
-    switcher.value++
+    switcher.value++    
+}
+
+function openWindow(infoParam) {
+    console.log('opened')
 }
 
 
@@ -331,6 +347,31 @@ function getInfo(infoParam) {
 #endline-5 {
     opacity: 0;
 }
+
+
+.blocker {
+    display: none;
+    
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .courses__card-box {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .item__title {
+        font-size: 27px;
+    }
+    .item__endline {
+        width: 16em;
+    }
+}
+
+
 
 
 

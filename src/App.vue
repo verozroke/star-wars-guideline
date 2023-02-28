@@ -25,14 +25,11 @@ import FooterSection from './components/FooterSection.vue';
   flex: 1 1 auto;
 }
 
-
-
-
 .wrapper {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: #fff;
 }
 

@@ -336,4 +336,19 @@ function getInfo(infoParam) {
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .courses__card-box {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .item__title {
+        font-size: 27px;
+    }
+    .item__endline {
+        width: 16em;
+    }
+}
+
 </style>

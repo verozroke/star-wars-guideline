@@ -41,7 +41,6 @@
 .courses-page {
     min-height: 43em;
     &__container {
-        width: 1200px;
         min-height: 43em;
         font-family: 'Noto Sans', sans-serif;
         display: flex;
@@ -197,5 +196,54 @@ a {
         color: inherit
     }
 }
+
+
+@media only screen and (max-width: 855px) {
+
+    .courses-page {
+        min-height: 120em;
+        &__row {
+            justify-content: flex-start;
+            min-height: 120em;
+            flex-direction: column;
+            gap: 3em;
+            height: auto;
+        }
+        &__item {
+            height:auto;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .courses-page {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .courses-page {
+        &__container {
+            gap: 2em;
+        }
+        &__title {
+            font-size: 25px;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .courses-page__subtitle {
+        width: 260px;
+    }
+
+}
+
+
+
 
 </style>

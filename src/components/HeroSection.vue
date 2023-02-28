@@ -127,4 +127,20 @@ function scrollDown(blockID) {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .hero {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__logo {
+            padding: 0;
+        }
+        &__box {
+            display: none;
+        }
+    }
+
+}
+
 </style>

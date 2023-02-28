@@ -65,7 +65,7 @@ body {
 
 
 ::-webkit-scrollbar {
-	width: 1vw;
+	width: 13px;
 	
 	background-color: transparent;
 	&-track {

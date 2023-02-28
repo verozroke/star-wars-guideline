@@ -72,4 +72,84 @@
 }
 
 
+@media only screen and (max-width: 710px) {
+    .download {
+        &__image {
+            max-width: 500px;
+            & img {
+                width: 500px;
+            }
+        }
+        &__title {
+            font-size: 35px
+        }
+        &__subtitle {
+            font-size: 18px;
+            width: 500px;
+        }
+        &__button {
+            margin: .5em 0 2em 0;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .download {
+        min-height: 30em;
+
+        &__container {
+            min-height: 30em;
+        }
+        &__image {
+            max-width: 300px;
+            & img {
+                width: 300px;
+            }
+        }
+        &__title {
+            font-size: 25px
+        }
+        &__subtitle {
+            font-size: 16px;
+            width: 280px;
+            text-align: justify;
+        }
+        &__button {
+            margin: .5em 0 2em 0;
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .download {
+        min-height: 30em;
+        &__container {
+            min-height: 30em;
+        }
+        &__image {
+            max-width: 250px;
+            & img {
+                width: 250px;
+            }
+        }
+        &__title {
+            margin: 1em 0 0 0;
+            font-size: 20px
+        }
+        &__subtitle {
+            font-size: 15px;
+            width: 240px;
+        }
+        &__button {
+            margin: .5em 0 2em 0;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
 </style>

@@ -45,6 +45,7 @@
         font-size: 16px;
     }
     &__logo {
+        margin: 0 0 0 1em;
         width: 45px;
         height: 56px;
         img {
@@ -60,6 +61,7 @@
         justify-content: flex-end;
         gap: 5em;
         font-weight: 700;
+        margin: 0 1em 0 0;
     }
     &__list {
         display: flex;

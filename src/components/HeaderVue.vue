@@ -29,7 +29,7 @@
         height: 1px;
         background-color: red;
         border-radius: 5em;
-        width: 500px;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         left: 0;

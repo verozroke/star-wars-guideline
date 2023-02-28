@@ -6,8 +6,8 @@ import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
+	<header-vue/>
 	<div class="wrapper">
-		<header-vue/>
 		<div class="main">
 			<router-view  v-slot="{ Component }">
 				<transition name="routering" mode="out-in">
@@ -26,11 +26,13 @@ import FooterSection from './components/FooterSection.vue';
 }
 
 
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    // overflow: hidden;
-    min-height: 100vh;;
+    overflow: hidden;
+    min-height: 100%;
     background-color: #fff;
 }
 

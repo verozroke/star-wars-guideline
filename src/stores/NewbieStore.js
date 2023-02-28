@@ -79,6 +79,20 @@ export const useNewbieStore = defineStore('newbieStore',{
                         link: '#',
                     }
                 },
+                {
+                    id: 5,
+                    btnColor: 'green',
+                    title: 'АТТЕСТАЦИЯ',
+                    description: `Пройди аттестацию!`,
+                    hasVideo: false,
+                    link: '#',
+                    test: {
+                        id: 5,
+                        btnColor: 'red',
+                        title: 'АТТЕСТАЦИЯ',
+                        link: '#',
+                    }
+                },
             ],
     })
 })

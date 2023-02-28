@@ -1,7 +1,6 @@
 <template>
     <div>
         <CoursesChoose/>
-        <FooterSection/>
     </div>
 </template>
 

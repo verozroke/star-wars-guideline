@@ -41,6 +41,7 @@
 .courses-page {
     min-height: 43em;
     &__container {
+        width: 1200px;
         min-height: 43em;
         font-family: 'Noto Sans', sans-serif;
         display: flex;

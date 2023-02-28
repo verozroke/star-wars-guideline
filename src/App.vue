@@ -1,27 +1,36 @@
 <script setup>
 import { onMounted } from 'vue';
 import HeaderVue from './components/HeaderVue.vue';
+import FooterSection from './components/FooterSection.vue';
 
 </script>
 
 <template>
 	<div class="wrapper">
 		<header-vue/>
-		<router-view  v-slot="{ Component }">
-			<transition name="routering" mode="out-in">
-				<component :is="Component"></component>
-			</transition>
-		</router-view>
+		<div class="main">
+			<router-view  v-slot="{ Component }">
+				<transition name="routering" mode="out-in">
+					<component :is="Component"></component>
+				</transition>
+			</router-view>
+		</div>
+		<FooterSection class="footer"/>
 	</div>
 </template>
 
 <style lang="scss">
 
+.main {
+  flex: 1 1 auto;
+}
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
     // overflow: hidden;
-    min-height: 100%;
+    min-height: 100vh;;
     background-color: #fff;
 }
 

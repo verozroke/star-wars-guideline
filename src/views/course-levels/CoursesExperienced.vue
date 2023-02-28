@@ -7,12 +7,12 @@
                             <li  v-for="lecture in experiencedStore.lectures" :key="lecture.id" class="courses__item item">
                                 <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
-                                    <div class="item__outer-circle-video">
+                                    <div class="item__outer-circle-video" :class="{'hidden': lecture.title === 'АТТЕСТАЦИЯ'}">
                                         <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
                                             <img class="play-icon" src="../../img/route/icons/play-icon.png" alt="">
                                         </div>
                                     </div>            
-                                    <div class="item__line"></div>
+                                    <div class="item__line" :class="{'hidden': lecture.title === 'АТТЕСТАЦИЯ'}"></div>
                                     <div class="item__outer-circle-video">
                                         <div class="item__inner-circle-video" :class="[lecture.test.btnColor]" @click="getInfo(lecture.test)">
                                             <img class="test-icon" src="../../img/route/icons/testi-icon.png" alt="">
@@ -36,13 +36,12 @@
                             <div style="white-space: pre-line;" class="card__text">
                                 {{ desc ? desc : 'Время проходить тесты!' }}
                             </div>
-                            <a v-if="btnColor" :href="link" class="card__button" :class="[btnColor]">{{ desc ? (hasVideo ?  'Посмотреть видео' : 'Скачать документы') : 'Перейти в тест' }}</a>
+                            <a target="_blank" v-if="btnColor" :href="link" class="card__button" :class="[btnColor]">{{ desc ? (hasVideo ?  'Посмотреть видео' : 'Скачать документы') : 'Перейти в тест' }}</a>
                         </div> 
                     </div>
                 </transition>
             </div>
         </div>
-        <FooterSection/>
     </div>
 </template>
 
@@ -91,6 +90,7 @@ function getInfo(infoParam) {
 </script>
 
 <style lang="scss" scoped>
+
 
 .courses {
     margin-top: 1em;
@@ -200,6 +200,7 @@ function getInfo(infoParam) {
         transition: all .2s ease-out;
     }
 }
+
 .item {
     display: flex;
     flex-direction: column;
@@ -214,6 +215,11 @@ function getInfo(infoParam) {
         height: 50px;
         width: 7px;
         background-color: rgb(176, 176, 176);
+        &.hidden {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
     }
     &__row {
         display: flex;
@@ -238,6 +244,12 @@ function getInfo(infoParam) {
         justify-content: center;
         align-items: center;
         filter: drop-shadow(.5em .25em .25em rgba(0, 0, 0, 0.33));
+        
+        &.hidden {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
         &.completed {
             border-color: #ffc116;
         }
@@ -320,7 +332,7 @@ function getInfo(infoParam) {
     margin: 0 0 0 5px;
 }
 
-#endline-4 {
+#endline-5 {
     opacity: 0;
 }
 

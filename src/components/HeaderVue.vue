@@ -30,10 +30,14 @@
         background-color: red;
         border-radius: 5em;
         width: 500px;
-        left: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
         top: 100%;       
     }
     &__container {
+        position: relative;
         height: 4.5em;
         display: flex;
         align-items: center;

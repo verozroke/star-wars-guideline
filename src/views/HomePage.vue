@@ -1,10 +1,9 @@
 <template>
-    <div>
-        <HeroSection/>
-        <DownloadSection/>
-        <CoursesChoose/>
-        <FooterSection/>
-    </div>
+<div>
+    <HeroSection/>
+    <DownloadSection/>
+    <CoursesChoose/>
+</div>
 </template>
 
 <script setup>
@@ -21,6 +20,5 @@ onMounted(() =>{
 </script>
 
 <style lang="scss" scoped>
-
 
 </style>

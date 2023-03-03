@@ -1,5 +1,11 @@
 <template>
     <div>
+        <transition  name="backgroundich">
+            <div v-if="isShow" class="background"></div>
+        </transition>
+        <transition name="popup">
+            <Popup @close="isShow = false" :title="title" :desc="desc" :btn-color="btnColor" :has-video="hasVideo" :link="link" v-if="isShow"/>
+        </transition>
         <div class="courses">
             <div class="courses__container">
                 <div class="courses__route-box">
@@ -8,14 +14,14 @@
                                 <div class="item__title">{{ lecture.id }}. {{ lecture.title }}</div>
                                 <div class="item__row">
                                     <div class="item__outer-circle-video" :id="'testy' + lecture.test.id">
-                                        <div class="item__inner-circle-video" :class="[lecture.btnColor]" @click="getInfo(lecture)">
-                                            <img class="play-icon" src="../../img/route/icons/play-icon.png" alt="">
+                                        <div class="item__inner-circle-video" :class="[lecture.btnColor]" >
+                                            <img class="play-icon" src="../../img/route/icons/play-icon.png" @click="isSmallScreen(lecture)" alt="">
                                         </div>
                                     </div>            
                                     <div class="item__line" :id="'test' + lecture.test.id"></div>
                                     <div class="item__outer-circle-video" :id="'test' + lecture.test.id">
-                                        <div class="item__inner-circle-video hidden" :class="[lecture.test.btnColor]" @click="getInfo(lecture.test)">
-                                            <img class="test-icon" src="../../img/route/icons/testi-icon.png" alt="">
+                                        <div class="item__inner-circle-video hidden" :class="[lecture.test.btnColor]">
+                                            <img class="test-icon" src="../../img/route/icons/testi-icon.png" @click="isSmallScreen(lecture.test)" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -50,6 +56,19 @@ import { ref } from 'vue';
 import { useProStore } from '../../stores/ProStore'
 import FooterSection from '../../components/FooterSection.vue';
 import { onMounted } from 'vue';
+import Popup from '../../components/Popup.vue';
+
+document.addEventListener('click', (e) => {
+    if(isShow.value === true) {
+        const popup = document.querySelector('.popup-inner')
+        if (!popup.contains(e.target) && !e.target.classList.contains('play-icon') && !e.target.classList.contains('test-icon')) {
+            togglePopUp()
+        }
+    }
+})
+
+let isShow = ref(false)
+
 
 onMounted(() =>{
   window.scrollTo(0, 0)
@@ -66,6 +85,25 @@ const post = {
     link: ref(''),
 }
 
+function isSmallScreen(infoParam) {
+    if(window.screen.width > 1000) {
+        getInfo(infoParam)
+    } else {
+        getInfo(infoParam)
+        togglePopUp()
+    }
+}
+
+
+function togglePopUp() {
+	isShow.value = !isShow.value
+    // if(isShow.value) {
+    //     background.style.display = 'block'
+    // } else {
+    //     background.style.display = 'none'
+    // }
+}
+
 let { title, desc, btnColor, hasVideo, link } = post
 
 let switcher = ref(0)
@@ -73,6 +111,8 @@ let switcher = ref(0)
 function capitalize(word) {
     return word[0].toUpperCase() + word.slice(1).toLowerCase();
 }
+
+
 
 
 function getInfo(infoParam) {
@@ -333,6 +373,61 @@ function getInfo(infoParam) {
 
 #testy2 {
     margin: 4em;
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // display: none;
+    z-index: 99;
+    transition: all .4s;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.backgroundich {
+    &-enter-from {
+        opacity: 0;
+    }
+    &-enter-active {
+        transition: all ease-in .4s;
+    }
+    &-enter-to {
+        opacity: 1;
+    }
+    &-leave-from {
+        opacity: 1;
+    }
+    &-leave-active {
+        transition: all ease-out .4s;
+    }
+    &-leave-to {
+        opacity: 0;
+    }
+}
+
+.popup {
+    &-enter-from {
+        transform: translateY(400px);
+    }
+    &-enter-to {
+        transform: translateY(0);
+    }
+    &-enter-active {
+        transition: all .4s ease-in;
+    }
+    &-leave-active {
+        transition: all .4s ease-out;
+    }
+    &-leave-from {
+        transform: translateY(0);
+    }
+    &-leave-to {
+        transform: translateY(500px);
+    }
 }
 
 

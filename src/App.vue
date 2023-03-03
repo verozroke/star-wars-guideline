@@ -28,7 +28,7 @@ import FooterSection from './components/FooterSection.vue';
 .wrapper {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: clip;
     min-height: 100vh;
     background-color: #fff;
 }

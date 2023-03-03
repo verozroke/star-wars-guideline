@@ -201,10 +201,10 @@ a {
 @media only screen and (max-width: 855px) {
 
     .courses-page {
-        min-height: 120em;
+        min-height: 108sem;
         &__row {
             justify-content: flex-start;
-            min-height: 120em;
+            min-height: 108em;
             flex-direction: column;
             gap: 3em;
             height: auto;

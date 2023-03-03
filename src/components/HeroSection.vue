@@ -137,7 +137,84 @@ function scrollDown(blockID) {
             padding: 0;
         }
         &__box {
-            display: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__title {
+            width: 450px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .hero {
+        &__box {
+
+        }
+        &__title {
+            width: 340px;
+            font-size: 25px;
+        }
+        &__subtitle {
+            width: 340px;
+            font-size: 15px;
+        }
+        &__text {
+            width: 340px;
+            font-size: 14px;
+        }
+        &__button {
+            padding: 0.35em 1em 0.5em 1em;
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) { 
+    .hero {
+        &__logo {
+            width: 400px;
+            font-size: 14px;
+            & img {
+                width: 400px;
+                height: 400px;
+                object-fit: contain;
+                margin: 0 0 2em 0;
+            }
+        }
+    
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hero {
+        &__logo {
+            font-size: 13px;
+            width: 275px;
+        }
+        &__box {
+
+        }
+        &__title {
+            width: 275px;
+            font-size: 22px;
+        }
+        &__subtitle {
+            width: 275px;
+            font-size: 13px;
+        }
+        &__text {
+            width: 275px;
+            font-size: 12px;
+        }
+        &__button {
+            padding: 0.35em 1em 0.5em 1em;
+            font-size: 14px;
         }
     }
 

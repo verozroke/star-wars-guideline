@@ -1,0 +1,1 @@
+import{C as e}from"./CoursesChoose-835d0b83.js";import{_ as o,e as s,o as _,c as a,f as t}from"./index-c8ba21c6.js";const r={__name:"CoursesPage",setup(c){return s(()=>{window.scrollTo(0,0)}),(n,u)=>(_(),a("div",null,[t(e)]))}},d=o(r,[["__scopeId","data-v-e75fb891"]]);export{d as default};

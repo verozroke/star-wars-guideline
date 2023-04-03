@@ -38,7 +38,7 @@ export const useProStore = defineStore('proStore', {
                     id: 2,
                     btnColor: 'red',
                     title: 'КОНСТРУКТОР ПО ШЕЛВИНГУ',
-                    link: '#',
+                    link: 'https://verozroke.github.io/shelving-simulator/',
                 }
             },
         ],

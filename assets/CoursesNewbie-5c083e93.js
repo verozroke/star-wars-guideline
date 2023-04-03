@@ -1,0 +1,27 @@
+import{h as B,_ as E,i as l,e as L,o as c,c as d,f,g as b,T as g,a as t,F as j,j as Q,u as e,k,l as R,m as V,t as a,n as _}from"./index-9a379ab3.js";import{P as U,_ as z,a as A}from"./Popup-7bf27288.js";const P=B("newbieStore",{state:()=>({info:{levelID:1,title:"УРОВЕНЬ 1.0. Ты - Юный Падаван",subtitle:"Данный уровень для новеньких сотрудников торговой команды (менее 6 мес. в Компании)",description:`Мы рады приветствовать тебя в рядах Торговой Команды! Тебя ждет познавательный обучающий путь,
+            где ты приобретешь ценные знания и опыт в продажах. Ниже описание ступеней, которые помогут тебе
+            стать эффективным сотрудником`},lectures:[{id:1,btnColor:"green",title:"ЗНАКОМСТВО С КОМПАНИЕЙ",hasVideo:!1,description:`После прохождения тобой первой недели адаптации c Супервайзером, закрепи материалы ниже: 
+                    
+ 1. Welcome видео о Компании ACC 
+                    
+ 2. История компании P&G 
+                    
+ 3. Основные понятия в работе`,link:"https://drive.google.com/file/d/1Vrm5hBdg1EtjlhQRgyPwczyw9TT15Tem/view?usp=sharing",test:{id:1,btnColor:"red",title:"ЗНАКОМСТВО С КОМПАНИЕЙ",link:"https://forms.gle/HPjwcP49HhgQbnK5A"}},{id:2,btnColor:"green",title:"ТОРГОВЫЕ УСЛОВИЯ",hasVideo:!1,description:`Изучи документы совместно с Супервайзером: 
+                    
+ 1. Квалификация ТТ
+                    
+ 2. Торговые Условия
+                    
+ 3. Программа «Золотой Продавец»
+                    `,link:"https://drive.google.com/file/d/1jORCBE2mLYvmEZZT4pcdhZ4ScpJT75_p/view?usp=sharing",test:{id:2,btnColor:"red",title:"ТОРГОВЫЕ УСЛОВИЯ",link:"https://forms.gle/UFPvdeXDxuKnnVRC7"}},{id:3,btnColor:"green",title:"ОСНОВЫ ДПШМ",hasVideo:!0,description:`
+                    1. Посмотри видео презентацию "Основы и принципы ДПМШ"
+                    
+ 2. Закрепи свои знания в полях с Супервайзером
+                    `,link:"#",test:{id:3,btnColor:"red",title:"ОСНОВЫ ДПШМ",link:"https://forms.gle/vzxYqRVM4HUJ1TyJ6"}},{id:4,btnColor:"green",title:"7 ШАГОВ ВИЗИТА",hasVideo:!0,description:`
+                    1. Посмотри видео презентацию "7 Шагов Визита"
+                    
+ 2. Закрепи свои знания в полях с Супервайзером`,link:"https://www.youtube.com/watch?v=U1o627h4KeE&feature=youtu.be",test:{id:4,btnColor:"red",title:"7 ШАГОВ ВИЗИТА",link:"https://forms.gle/Q3SPZnbWvQp5Yd87A"}},{id:5,btnColor:"green",title:"АТТЕСТАЦИЯ",description:"Пройди аттестацию!",hasVideo:!1,link:"#",test:{id:5,btnColor:"red",title:"АТТЕСТАЦИЯ",link:"https://forms.gle/euobaMQj5eoxNbSXA"}}]})});const Z={key:0,class:"background"},$={class:"courses"},D={class:"courses__container"},F={class:"courses__route-box"},H={class:"courses__route"},I={class:"item__title"},J={class:"item__row"},K=["onClick"],M={class:"item__outer-circle-video"},Y=["onClick"],q=["id"],W={style:{display:"none"}},X={class:"courses__card card"},G={class:"card__title"},O={style:{"white-space":"pre-line"},class:"card__text"},ee=["href"],te={__name:"CoursesNewbie",setup(se){document.addEventListener("click",s=>{o.value===!0&&!document.querySelector(".popup-inner").contains(s.target)&&!s.target.classList.contains("play-icon")&&!s.target.classList.contains("test-icon")&&w()});let o=l(!1);L(()=>{window.scrollTo(0,0)});const S=P(),x={title:l(""),desc:l(`Мы рады приветствовать тебя в рядах Торговой Команды! 
+
+Тебя ждет познавательный обучающий путь, где ты приобретешь ценные знания и опыт в продажах. 
+
+Ниже описание ступеней, которые помогут тебе стать эффективным сотрудником`),btnColor:l(""),hasVideo:l(!1),link:l("")};let{title:n,desc:r,btnColor:u,hasVideo:p,link:h}=x,v=l(0);function T(s){return s[0].toUpperCase()+s.slice(1).toLowerCase()}function C(s){window.screen.width>1e3?y(s):(y(s),w())}function w(){o.value=!o.value}function y(s){n.value=T(s.title),r.value=s.description,u.value=s.btnColor,p.value=s.hasVideo,h.value=s.link,v.value++}return(s,m)=>(c(),d("div",null,[f(g,{name:"backgroundich"},{default:b(()=>[e(o)?(c(),d("div",Z)):k("",!0)]),_:1}),f(g,{name:"popup"},{default:b(()=>[e(o)?(c(),R(U,{key:0,onClose:m[0]||(m[0]=i=>V(o)?o.value=!1:o=!1),title:e(n),desc:e(r),"btn-color":e(u),"has-video":e(p),link:e(h)},null,8,["title","desc","btn-color","has-video","link"])):k("",!0)]),_:1}),t("div",$,[t("div",D,[t("div",F,[t("ul",H,[(c(!0),d(j,null,Q(e(S).lectures,i=>(c(),d("li",{key:i.id,class:"courses__item item"},[t("div",I,a(i.id)+". "+a(i.title),1),t("div",J,[t("div",{class:_(["item__outer-circle-video",{hidden:i.title==="АТТЕСТАЦИЯ"}])},[t("div",{class:_(["item__inner-circle-video",[i.btnColor]])},[t("img",{class:"play-icon",src:z,alt:"",onClick:N=>C(i)},null,8,K)],2)],2),t("div",{class:_(["item__line",{hidden:i.title==="АТТЕСТАЦИЯ"}])},null,2),t("div",M,[t("div",{class:_(["item__inner-circle-video",[i.test.btnColor]])},[t("img",{class:"test-icon",src:A,onClick:N=>C(i.test),alt:""},null,8,Y)],2)])]),t("div",{id:`endline-${i.id}`,class:"item__endline"},null,8,q)]))),128))])]),f(g,{name:"slide",mode:"out-in"},{default:b(()=>[(c(),d("div",{key:e(v),class:"courses__card-box"},[t("div",W,a(e(v)),1),t("div",X,[t("div",G,a((e(n)==="Основы дпшм"?V(n)?n.value="Основы ДПШМ":n="Основы ДПШМ":e(n))?e(n):"Добро пожаловать!"),1),t("div",O,a(e(r)?e(r):"Время проходить тесты!"),1),e(u)?(c(),d("a",{key:0,target:"_blank",href:e(h),class:_(["card__button",[e(u)]])},a(e(r)?e(p)?"Посмотреть видео":"Скачать документы":"Перейти в тест"),11,ee)):k("",!0)])]))]),_:1})])])]))}},ne=E(te,[["__scopeId","data-v-6c4f1d9f"]]);export{ne as default};

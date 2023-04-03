@@ -23,7 +23,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                     id: 1,
                     btnColor: 'red',
                     title: 'ОСНОВЫ ДПШМ',
-                    link: '#',
+                    link: 'https://forms.gle/vzxYqRVM4HUJ1TyJ6',
                 }
 
             },
@@ -34,12 +34,12 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 description: `1. Посмотри видео запись тренинга "Свойство преимущество выгоды"
                 \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег`,
                 hasVideo: true,
-                link: '#',
+                link: 'https://youtu.be/wHTWyazn4zM',
                 test: {
                     id: 2,
                     btnColor: 'red',
                     title: 'СВОЙСТВО ПРЕИМУЩЕСТВО ВЫГОДЫ',
-                    link: '#',
+                    link: 'https://forms.gle/17DH3LwngngCv6QQ9',
                 }
 
             },
@@ -52,12 +52,12 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег
                 `,
                 hasVideo: true,
-                link: 'https://youtu.be/EDnCBisxNPU',
+                link: 'https://youtu.be/9ZDwHFOO4eg',
                 test: {
                     id: 3,
                     btnColor: 'red',
                     title: 'ФОРМАТ УБЕДИТЕЛЬНЫХ ПРОДАЖ',
-                    link: '#',
+                    link: 'https://forms.gle/bqAj5QEPmahsk1iAA',
                 }
             },
             {
@@ -68,12 +68,12 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 1. Посмотри видео запись тренинга "Преодоление возражений"
                 \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег`,
                 hasVideo: true,
-                link: '#',
+                link: 'https://youtu.be/Vv-xWLV_G2M',
                 test: {
-                    id: 3,
+                    id: 4,
                     btnColor: 'red',
                     title: 'ПРЕОДОЛЕНИЕ ВОЗРАЖЕНИЙ',
-                    link: '#',
+                    link: 'https://forms.gle/d2WuYQX56yRmwH2z5',
                 }
             },
             {
@@ -87,7 +87,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                     id: 5,
                     btnColor: 'red',
                     title: 'АТТЕСТАЦИЯ',
-                    link: '#',
+                    link: 'https://forms.gle/QsJvjYT9nJL6LecBA',
                 }
             },
         ]

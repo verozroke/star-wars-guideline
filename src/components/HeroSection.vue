@@ -197,9 +197,6 @@ function scrollDown(blockID) {
             font-size: 13px;
             width: 275px;
         }
-        &__box {
-
-        }
         &__title {
             width: 275px;
             font-size: 22px;

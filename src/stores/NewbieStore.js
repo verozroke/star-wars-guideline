@@ -20,12 +20,12 @@ export const useNewbieStore = defineStore('newbieStore',{
                     \n 1. Welcome видео о Компании ACC 
                     \n 2. История компании P&G 
                     \n 3. Основные понятия в работе`,
-                    link: 'https://www.duolingo.com/learn',
+                    link: 'https://drive.google.com/file/d/1Vrm5hBdg1EtjlhQRgyPwczyw9TT15Tem/view?usp=sharing',
                     test: {
                         id: 1,
                         btnColor: 'red',
                         title: 'ЗНАКОМСТВО С КОМПАНИЕЙ',
-                        link: '#'
+                        link: 'https://forms.gle/HPjwcP49HhgQbnK5A'
                     }
                 },
                 {
@@ -38,12 +38,12 @@ export const useNewbieStore = defineStore('newbieStore',{
                     \n 2. Торговые Условия
                     \n 3. Программа «Золотой Продавец»
                     `,
-                    link: '',
+                    link: 'https://drive.google.com/file/d/1jORCBE2mLYvmEZZT4pcdhZ4ScpJT75_p/view?usp=sharing',
                     test: {
                         id: 2,
                         btnColor: 'red',
                         title: 'ТОРГОВЫЕ УСЛОВИЯ',
-                        link: '#'
+                        link: 'https://forms.gle/UFPvdeXDxuKnnVRC7'
                     }
                 },
                 {
@@ -60,7 +60,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                         id: 3,
                         btnColor: 'red',
                         title: 'ОСНОВЫ ДПШМ',
-                        link: '#'
+                        link: 'https://forms.gle/vzxYqRVM4HUJ1TyJ6'
                     }
                 },
                 {
@@ -71,12 +71,12 @@ export const useNewbieStore = defineStore('newbieStore',{
                     description: `
                     1. Посмотри видео презентацию "7 Шагов Визита"
                     \n 2. Закрепи свои знания в полях с Супервайзером`,
-                    link: '#',
+                    link: 'https://www.youtube.com/watch?v=U1o627h4KeE&feature=youtu.be',
                     test: {
                         id: 4,
                         btnColor: 'red',
                         title: '7 ШАГОВ ВИЗИТА',
-                        link: '#',
+                        link: 'https://forms.gle/Q3SPZnbWvQp5Yd87A',
                     }
                 },
                 {
@@ -90,7 +90,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                         id: 5,
                         btnColor: 'red',
                         title: 'АТТЕСТАЦИЯ',
-                        link: '#',
+                        link: 'https://forms.gle/euobaMQj5eoxNbSXA',
                     }
                 },
             ],

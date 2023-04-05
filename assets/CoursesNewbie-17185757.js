@@ -1,4 +1,4 @@
-import{h as B,_ as E,i as l,e as L,o as c,c as d,f,g as b,T as g,a as t,F as j,j as Q,u as e,k,l as R,m as V,t as a,n as _}from"./index-ffe81bdb.js";import{P as U,_ as z,a as A}from"./Popup-f890d2ce.js";const P=B("newbieStore",{state:()=>({info:{levelID:1,title:"УРОВЕНЬ 1.0. Ты - Юный Падаван",subtitle:"Данный уровень для новеньких сотрудников торговой команды (менее 6 мес. в Компании)",description:`Мы рады приветствовать тебя в рядах Торговой Команды! Тебя ждет познавательный обучающий путь,
+import{h as B,_ as E,i as l,e as L,o as c,c as d,f,g as b,T as g,a as t,F as j,j as Q,u as e,k,l as R,m as V,t as a,n as _}from"./index-0182eab1.js";import{P as U,_ as z,a as A}from"./Popup-0b4544b9.js";const P=B("newbieStore",{state:()=>({info:{levelID:1,title:"УРОВЕНЬ 1.0. Ты - Юный Падаван",subtitle:"Данный уровень для новеньких сотрудников торговой команды (менее 6 мес. в Компании)",description:`Мы рады приветствовать тебя в рядах Торговой Команды! Тебя ждет познавательный обучающий путь,
             где ты приобретешь ценные знания и опыт в продажах. Ниже описание ступеней, которые помогут тебе
             стать эффективным сотрудником`},lectures:[{id:1,btnColor:"green",title:"ЗНАКОМСТВО С КОМПАНИЕЙ",hasVideo:!1,description:`После прохождения тобой первой недели адаптации c Супервайзером, закрепи материалы ниже: 
                     
@@ -14,7 +14,7 @@ import{h as B,_ as E,i as l,e as L,o as c,c as d,f,g as b,T as g,a as t,F as j,j
                     
  3. Программа «Золотой Продавец»
                     `,link:"https://drive.google.com/file/d/1jORCBE2mLYvmEZZT4pcdhZ4ScpJT75_p/view?usp=sharing",test:{id:2,btnColor:"red",title:"ТОРГОВЫЕ УСЛОВИЯ",link:"https://forms.gle/UFPvdeXDxuKnnVRC7"}},{id:3,btnColor:"green",title:"ОСНОВЫ ДПШМ",hasVideo:!0,description:`
-                    1. Посмотри видео презентацию "Основы и принципы ДПМШ"
+                    1. Посмотри видео презентацию "Основы и принципы ДПШМ"
                     
  2. Закрепи свои знания в полях с Супервайзером
                     `,link:"#",test:{id:3,btnColor:"red",title:"ОСНОВЫ ДПШМ",link:"https://forms.gle/vzxYqRVM4HUJ1TyJ6"}},{id:4,btnColor:"green",title:"7 ШАГОВ ВИЗИТА",hasVideo:!0,description:`

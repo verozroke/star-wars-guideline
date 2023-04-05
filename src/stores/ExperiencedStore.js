@@ -18,7 +18,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 description: `1. Посмотри видео презентацию "Основы и принципы ДПШМ"
                 \n2. Закрепи свои знания в полях с Супервайзером`,
                 hasVideo: true,
-                link: '#',
+                link: 'https://youtu.be/NUdZJJoX6bU',
                 test: {
                     id: 1,
                     btnColor: 'red',

@@ -55,7 +55,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                     1. Посмотри видео презентацию "Основы и принципы ДПШМ"
                     \n 2. Закрепи свои знания в полях с Супервайзером
                     `,
-                    link: '#',
+                    link: 'https://youtu.be/NUdZJJoX6bU',
                     test: {
                         id: 3,
                         btnColor: 'red',

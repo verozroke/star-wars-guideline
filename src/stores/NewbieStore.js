@@ -38,7 +38,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                     \n 2. Торговые Условия
                     \n 3. Программа «Золотой Продавец»
                     `,
-                    link: 'https://drive.google.com/file/d/1jORCBE2mLYvmEZZT4pcdhZ4ScpJT75_p/view?usp=sharing',
+                    link: 'https://drive.google.com/drive/folders/1-SkgBX9G255fmXAHRiSRW-j4FJbyeKzN?usp=share_link',
                     test: {
                         id: 2,
                         btnColor: 'red',

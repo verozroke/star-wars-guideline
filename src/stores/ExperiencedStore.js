@@ -15,7 +15,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 id: 1,
                 btnColor: 'green',
                 title: 'ОСНОВЫ ДПШМ',
-                description: `1. Посмотри видео презентацию "Основы и принципы ДПМШ"
+                description: `1. Посмотри видео презентацию "Основы и принципы ДПШМ"
                 \n2. Закрепи свои знания в полях с Супервайзером`,
                 hasVideo: true,
                 link: '#',
@@ -30,15 +30,15 @@ export const useExperiencedStore = defineStore('experiencedStore', {
             {
                 id: 2,
                 btnColor: 'green',
-                title: 'СВОЙСТВО ПРЕИМУЩЕСТВО ВЫГОДЫ',
-                description: `1. Посмотри видео запись тренинга "Свойство преимущество выгоды"
-                \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег`,
+                title: 'СВОЙСТВО ПРЕИМУЩЕСТВА ВЫГОДЫ',
+                description: `1. Посмотри видео запись тренинга "Свойство Преимущества Выгоды"
+                \n2. Закрепи материал в полях с Супервайзером и на оффлайн тренингах с участием коллег`,
                 hasVideo: true,
                 link: 'https://youtu.be/wHTWyazn4zM',
                 test: {
                     id: 2,
                     btnColor: 'red',
-                    title: 'СВОЙСТВО ПРЕИМУЩЕСТВО ВЫГОДЫ',
+                    title: 'СВОЙСТВО ПРЕИМУЩЕСТВА ВЫГОДЫ',
                     link: 'https://forms.gle/17DH3LwngngCv6QQ9',
                 }
 
@@ -49,7 +49,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 title: 'ФОРМАТ УБЕДИТЕЛЬНЫХ ПРОДАЖ',
                 description: `
                 1. Посмотри видео запись тренинга "Формат Убедительных Продаж"
-                \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег
+                \n2. Закрепи материал в полях с Супервайзером и на оффлайн тренингах с участием коллег
                 `,
                 hasVideo: true,
                 link: 'https://youtu.be/9ZDwHFOO4eg',
@@ -66,7 +66,7 @@ export const useExperiencedStore = defineStore('experiencedStore', {
                 title: 'ПРЕОДОЛЕНИЕ ВОЗРАЖЕНИЙ',
                 description: `
                 1. Посмотри видео запись тренинга "Преодоление возражений"
-                \n2. Закрепи материал в полях Супервайзером и на оффлайн тренингах с участием коллег`,
+                \n2. Закрепи материал в полях с Супервайзером и на оффлайн тренингах с участием коллег`,
                 hasVideo: true,
                 link: 'https://youtu.be/Vv-xWLV_G2M',
                 test: {

@@ -38,7 +38,7 @@
                     <div :key="switcher" class="courses__card-box">
                         <div style="display: none;">{{ switcher }}</div>
                         <div class="courses__card card">
-                            <div class="card__title">{{  (title === 'Основы дпшм' ? title = 'Основы ДПШМ' : title) ? title : 'Добро пожаловать!' }}</div>
+                            <div class="card__title">{{  (title === 'Основы Дпшм' ? title = 'Основы ДПШМ' : title) ? title : 'Добро пожаловать!' }}</div>
                             <div style="white-space: pre-line;" class="card__text">
                                 {{ desc ? desc : 'Время проходить тесты!' }}
                             </div>
@@ -113,7 +113,7 @@ function capitalize(word) {
 
 
 function getInfo(infoParam) {
-    title.value = capitalize(infoParam.title)
+    title.value = capitalizeWords(infoParam.title)
     desc.value  = infoParam.description
     btnColor.value = infoParam.btnColor
     hasVideo.value = infoParam.hasVideo
@@ -121,6 +121,14 @@ function getInfo(infoParam) {
     switcher.value++
 }
 
+
+function capitalizeWords(str) {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
 
 
 

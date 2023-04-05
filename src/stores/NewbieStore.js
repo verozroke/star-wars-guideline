@@ -52,7 +52,7 @@ export const useNewbieStore = defineStore('newbieStore',{
                     title: 'ОСНОВЫ ДПШМ',
                     hasVideo: true,
                     description: `
-                    1. Посмотри видео презентацию "Основы и принципы ДПМШ"
+                    1. Посмотри видео презентацию "Основы и принципы ДПШМ"
                     \n 2. Закрепи свои знания в полях с Супервайзером
                     `,
                     link: '#',

@@ -9,7 +9,7 @@
                         <div class="post__image"><img src="../img/courses-choose/1.png" alt=""></div>
                         <div class="post__text">Юный падаван</div>
                     </router-link>
-                    <div class="courses-page__subtitle">Данный уровень для новеньких сотрудников торговой команды (менее 6 мес. в Компании)</div>
+                    <div class="courses-page__subtitle">Данный уровень для новеньких сотрудников торговой команды (менее 3 мес. в Компании)</div>
                 </li>
                 <li class="courses-page__item">
                     <div class="courses-page__number">Уровень II</div>
@@ -17,7 +17,7 @@
                         <div class="post__image"><img src="../img/courses-choose/2.jpg" alt=""></div>
                         <div class="post__text">Джедай Продаж</div>
                     </router-link>
-                    <div class="courses-page__subtitle">Данный уровень для опытных сотрудников торговой команды (более 6 мес. в Компании)</div>
+                    <div class="courses-page__subtitle">Данный уровень для опытных сотрудников торговой команды (более 3 мес. в Компании)</div>
                 </li>
                 <li class="courses-page__item">
                     <div class="courses-page__number">Уровень III</div>

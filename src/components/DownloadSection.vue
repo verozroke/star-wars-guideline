@@ -5,7 +5,7 @@
             <div class="download__title">Навигационная карта</div>
             <div class="download__subtitle">Мы подготовили для тебя навигационную карту. В данной карте отображены все уровни. Здесь ты можешь ознакомиться со всей обучающей программой в рамках «Путь Джедая»</div>
             <div class="download__image"><img src="../img/download/card.png" alt=""></div>
-            <a href="https://drive.google.com/file/d/1I7SPADzhsqI_h99YTiPfAqoYHadyxvLk/view?usp=sharing" target="_blank" class="download__button">Скачать PDF</a>
+            <a href="https://drive.google.com/file/d/1lcpN6lYx5RyC2nBvuNMCNRHwMPtkVeVB/view?usp=sharing" target="_blank" class="download__button">Скачать PDF</a>
         </div>
     </div>
 </template>

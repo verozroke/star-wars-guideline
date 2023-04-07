@@ -31,7 +31,7 @@ export const useProStore = defineStore('proStore', {
                 description: `1. Пройди задания в конструкторе по шелвингу
                 \n2. Сдай аттестацию с Супервайзером`,
                 hasVideo: true,
-                link: 'https://verozroke.github.io/apple-constructor/',
+                link: 'https://verozroke.github.io/shelving-simulator/',
                 test: {
                     id: 2,
                     btnColor: 'red',

@@ -37,8 +37,10 @@ export const useNewbieStore = defineStore('newbieStore',{
                     \n 1. Квалификация ТТ
                     \n 2. Торговые Условия
                     \n 3. Программа «Золотой Продавец»
+                    \n 4. 10 Задач в Магазине 
+                    \n 5. Презентация Must Have List
                     `,
-                    link: 'https://drive.google.com/drive/folders/1-SkgBX9G255fmXAHRiSRW-j4FJbyeKzN?usp=share_link',
+                    link: 'https://drive.google.com/file/d/1YzdnnprydzpGbsrCABekWiatWGQvQIkM/view?usp=sharing',
                     test: {
                         id: 2,
                         btnColor: 'red',

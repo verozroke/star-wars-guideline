@@ -37,7 +37,7 @@
                     <div :key="switcher" class="courses__card-box">
                         <div style="display: none;">{{ switcher }}</div>
                         <div class="courses__card card">
-                            <div class="card__title">{{ title ? title : 'Добро пожаловать!' }}</div>
+                            <div class="card__title">{{ (title === 'Sbd' ? title = 'SBD' : title) ? title : 'Добро пожаловать!' }}</div>
                             <div style="white-space: pre-line;" class="card__text">
                                 {{ desc ? desc : 'Время проходить тесты!' }}
                             </div>
@@ -362,16 +362,16 @@ function getInfo(infoParam) {
 
 // sdfsdfsdf
 
-#endline-2 {
+#endline-3 {
     opacity: 0;
 }
 
 
-#test2 {
+#test2, #test3 {
     display: none;
 }
 
-#testy2 {
+#testy2, #testy3 {
     margin: 4em;
 }
 
